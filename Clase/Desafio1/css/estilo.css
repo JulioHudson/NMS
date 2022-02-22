@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#header1 {
+    background-color: rgb(48, 104, 136);
+    display: grid;
+    color: white;
+    grid-template-columns: 24px auto;
+    grid-template-rows: 24px;
+    justify-content: space-between;
+    padding: 10px 36px;
+}
+
+#header1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#header1 a:hover {
+    padding: 5px 5px;
+    background-color: #111;
+    border-radius: 100px;
+}
+
+#header2 {
+    background-color: rgb(48, 104, 136);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40px;
+    justify-content: space-between;
+    padding: 0px 36px;
+}
+
+
+#nav_nms {
+    list-style: none;
+}
+
+#nav_nms li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+#nav_nms li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#nav_nms li a:hover {
+    padding: 15px 15px;
+    background-color: #111;
+    border-radius: 100px;
+}
+
+/*body*/
+body {
+    background-image: url(.././img/background0.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+
+}
+main {
+    height: 100vh;
+}
+
+.h1 {
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 300%;
+    text-align: center;
+}
+
+.p {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: larger;
+    padding: 36px;
+}
+
+form {
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: large;
+}
+
+/*Footer*/
+footer {
+    color: white;
+    background-color: rgb(48, 104, 136);
+    position: relative;
+    bottom: 0;
+    width: auto;
+    padding: 5px 36px;
+    font-size: 12px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#links_footer {
+    list-style: none;
+}
+
+#links_footer2 {
+    list-style: none;
+}
+
+#links_footer2 li {
+    display: inline-block;
+}
+
+.link_principal {
+    color: white;
+    font-weight: bold;
+}
+
+#footer1 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15px 15px 15px;
+    justify-content: space-between;
+}
+
+#footer2 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15px 15px;
+    justify-content: space-between;
+}
+
+.enlaces_footer {
+    text-align: right;
+    grid-column-start: 3;
+}
+
+#footer2 p {
+    text-align: right;
+}
+
+#links_redes {
+    text-align: center;
+}
+
+/*Ships I've found*/
+
+#ships {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+
+}
+div.gallery {
+    margin: 15px;
+    border: 2px solid #ccc;
+    background-color: #333;
+}
+
+div.gallery:hover {
+    border: 2px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    height: 50px;
+    text-align: center;
+}
+
+div.desc p {
+    padding-top: 5px;
+}
+
+/*news*/
+.youtube {
+    display: flex;
+    justify-content: center;
+}
+
+/*contatc*/
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact fieldset{
+    background-color: #333;
+}
+
+/*about*/
+
+.about_img0 {
+    display: block;
+    border-width: 15px;
+    border-style: double;
+    border-color: white;
+    border-radius: 300px;
+    box-shadow: 5px 5px black;
+    margin: auto  
+}
+
+.about_tittle {
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 300%;
+    text-align: center;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+.about_desc {
+    text-align: center;
+    width: 500px;
+    font-weight: bold;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+    /* header */
+    #nav_nms li {
+        display: inline-block;
+        margin: 0px 1px;
+    }
+    
+    #nav_nms li a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    
+    #nav_nms li a:hover {
+        padding: 15px 15px;
+        background-color: #111;
+        border-radius: 100px;
+    }
+    
+    /* footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 99%;
+        padding: 5px 5px;
+        font-size: 9px;
+    }
+    
+    .h1 {
+        font-size: x-large;
+    }
+    
+    .about_tittle {
+        font-size: large;
+    }
+
+    .p {
+        font-size: small;
+    }
+    
+    /* ships */
+    #ships {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    div.gallery {
+        margin: 15px;
+        border: 2px solid #ccc;
+        background-color: #333;
+    }
+    
+    div.gallery:hover {
+        border: 2px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        height: 36px;
+            text-align: center;
+    }
+    
+    div.desc p {
+        padding-top: 5px;
+        font-size: 12px;
+    }
+}
+
+/* hasta 768 */
+@media screen and (max-width: 768px) {
+    /* header */
+    #nav_nms li {
+        display: inline-block;
+        margin: 0px 1px;
+    }
+    
+    #nav_nms li a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    
+    #nav_nms li a:hover {
+        padding: 15px 15px;
+        background-color: #111;
+        border-radius: 100px;
+    }
+
+    /* footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 99%;
+        padding: 5px 5px;
+        font-size: 9px;
+    }
+
+    .h1 {
+        font-size: x-large;
+    }
+
+    .about_tittle {
+        font-size: large;
+    }
+    .p {
+        font-size: small;
+    }
+
+    /* ships */
+    #ships {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    
+    }
+    div.gallery {
+        margin: 15px;
+        border: 2px solid #ccc;
+        background-color: #333;
+    }
+    
+    div.gallery:hover {
+        border: 2px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        height: 36px;
+        text-align: center;
+    }
+    
+    div.desc p {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+}
+
+/* hasta 375 */
+@media screen and (max-width: 375px) {
+    /* header */
+    #nav_nms li {
+        display: inline-block;
+        margin: 0px 1px;
+    }
+    
+    #nav_nms li a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    
+    #nav_nms li a:hover {
+        padding: 15px 15px;
+        background-color: #111;
+        border-radius: 100px;
+    }
+
+    /* footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: auto;
+        padding: 5px 5px;
+        font-size: 9px;
+    }
+
+    .h1 {
+        font-size: x-large;
+    }
+
+    .about_tittle {
+        font-size: large;
+    }
+    .p {
+        font-size: small;
+    }
+
+    /* ships */
+    #ships {
+        display: grid;
+        grid-template-columns: auto auto;
+    
+    }
+    div.gallery {
+        margin: 15px;
+        border: 2px solid #ccc;
+        background-color: #333;
+    }
+    
+    div.gallery:hover {
+        border: 2px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        height: 36px;
+        text-align: center;
+    }
+    
+    div.desc p {
+        padding-top: 1px;
+        font-size: 8px;
+    }
+
+    .youtube iframe {
+        width: 325px;
+        height: 167px;
+    }
+}
