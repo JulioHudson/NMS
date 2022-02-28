@@ -43,34 +43,51 @@
             </div>
             <div>
                 <img src=".././img/no_mans_sky_atlas_icon.png" alt="logo2" width="24">
-                <a class="ns text-light" href="./pages/register.html">Register</a> | <a  class="ns text-light" href="./pages/login.html">Login</a>
+                <a class="ns text-light" href="register.html">Register</a> | <a  class="ns text-light" href="login.html">Login</a>
             </div>
         </nav>
     </header>  
 <main>
-    <div>
-        <h1 class="h1">To contact us.</h1>
-    </div>
-    <div class="contact">
-        <form>
-            <fieldset>
-                <legend>Ask Us / Sugestions</legend>
-                <label for="ask">Ask Us</label>
-                <input type="radio" id="ask" name="fav_ask" value="ask">
-                <label for="sugestion">Sugestions</label>
-                <input type="radio" id="sugestion" name="fav_ask" value="sugestion"><br>
-                <label for="fname">Name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last Name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="mail">Mail:</label><br>
-                <input type="text" id="fname" name="fmail"><br>
-                <label>Ask Us / Sugestions</label><br>
-                <textarea></textarea><br>
-                <input type="submit">
-            </fieldset>
-        </form>
-    </div>
+    <form class="container">
+    <fieldset>
+        <legend>Ask Us / Sugestions</legend>
+        <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+        <label for="nameLastName" class="form-label mt-4">Name</label>
+        <input type="name" class="form-control" id="nameLastName" placeholder="Name and last name">
+        </div>
+        <fieldset class="form-group">
+            <legend class="mt-4">Select an option</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Ask Us
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                Sugestions
+                </label>
+            </div>
+            <div class="form-check disabled">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                Others
+                </label>
+            </div>
+        </fieldset>
+        <div class="form-group">
+        <label for="exampleTextarea" class="form-label mt-4">Tell Us</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+    </form>
 </main>
 <footer class="mt-auto">
     <div class="container-fluid bg-secondary pt-2 ps-3 pe-3">
