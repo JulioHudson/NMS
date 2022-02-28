@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>About</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
             <div class="container-fluid">
                 <div>
                     <img src=".././img/shipLogo.png" alt="logo" width="100" class="animate__animated animate__bounceInRight">
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href=".././index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.html">News</a>
@@ -43,7 +43,7 @@
             </div>
             <div>
                 <img src=".././img/no_mans_sky_atlas_icon.png" alt="logo2" width="24">
-                <a class="ns" href="register.html">Register</a> | <a class="ns" href="login.html">Login</a>
+                <a class="ns text-light" href="register.html">Register</a> | <a  class="ns text-light" href="login.html">Login</a>
             </div>
         </nav>
     </header>  
@@ -56,33 +56,32 @@
         <h2 class="about_tittle">Folken the astroneer!</h2>
     </div>
     </main>
-    <footer>
-        <div id="footer1">
-            <div>
-                <p><a href="#"><b>No Man's Sky</b></a></p>
-                <p><a href="#"><b>Sign up to receive our newsletter</b></a></p>
-            </div>
-            <div class="enlaces_footer">
-                <ul id="links_footer">
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
+    <footer class="mt-auto">
+        <div class="container-fluid bg-secondary pt-2 ps-3 pe-3">
+            <div class="row">
+                <div class="col-2">
+                    <a class="ns text-light" href="#">Sign up to receive our newsletter</a>
+                </div>
+                <div class="col-8">
+                    <div>
+                        <ul class="list-unstyled list-inline text-center">
+                            <li class="list-inline-item"><a href="https://www.facebook.com"><img src=".././img/facebook-new.png" alt="Facebook" width="30px" height="30px"></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com"><img src=".././img/twitter--v1.png" alt="Twitter" width="30px" height="30px"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com"><img src=".././img/instagram-new--v1.png" alt="Instagram" width="30px" height="30px"></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com"><img src=".././img/youtube-play.png" alt="Youtube" width="30px" height="30px"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 text-end">
+                    <a class="ns text-light" href="contact.html">Contact us</a>
+                </div>
+            </div>  
         </div>
-        <div id="footer2">
-            <div>
-                <p>© 2022 Julio Hudson, all rights reserved.</p>
-            </div>
-            <div id="links_redes">
-                <ul id="links_footer2">
-                    <li><a href="https://www.facebook.com"><img src="../img/facebook-new.png" alt="Facebook" width="30px" height="30px"</li>
-                    <li><a href="https://twitter.com"><img src="../img/twitter--v1.png" alt="Twitter" width="30px" height="30px"></a></li>
-                    <li><a href="https://www.instagram.com"><img src="../img/instagram-new--v1.png" alt="Instagram" width="30px" height="30px"></li>
-                    <li><a href="https://www.youtube.com"><img src="../img/youtube-play.png" alt="Youtube" width="30px" height="30px"></a></li>
-                </ul>
-            </div>
-            <div>
-                <p><a href="#">Privacy Policy</a> | <a href="#">End User License Agreement</a></p>
+        <div class="container-fluid bg-secondary pb-1">
+            <div class="col-sm">
+                <div class="text-center">
+                    <span>© 2022 Julio Hudson, all rights reserved.</span>
+                </div>
             </div>
         </div>
     </footer>

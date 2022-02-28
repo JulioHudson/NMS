@@ -9,79 +9,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>News</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <div class="container-fluid">
-            <div>
-                <img src="./img/shipLogo.png" alt="logo" width="100" class="animate__animated animate__bounceInRight">
-            </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/news.html">News<span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Media</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="./pages/ships.html">Ships I've found</a>
-                                <a class="dropdown-item" href="./pages/gallery.html">Gallery</a>
-                                <a class="dropdown-item" href="./pages/video.html">Videos</a>
-                            </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container-fluid">
                 <div>
-                    <img src="./img/no_mans_sky_atlas_icon.png" alt="logo2" width="24">
-                    <a class="ns" href="./pages/register.html">Register</a> | <a class="ns" href="./pages/login.html">Login</a>
+                    <img src=".././img/shipLogo.png" alt="logo" width="100" class="animate__animated animate__bounceInRight">
                 </div>
-            </div>   
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href=".././index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="ships.html">Ships I've found</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img src=".././img/no_mans_sky_atlas_icon.png" alt="logo2" width="24">
+                <a class="ns text-light" href="register.html">Register</a> | <a  class="ns text-light" href="login.html">Login</a>
+            </div>
         </nav>
     </header>  
     <main>
-    <div>
-        <h1 class="h1">New patch, No Man's Sky Frontiers!</h1>
-        <p class="p">No Man's Sky Frontiers is the game's latest free update. The update encourages players to explore planetary settlements, help them grow, and even found their own settlement by becoming an overseer. There are hundreds of new base parts to collect, including decorative parts, as well as a new expedition season called Cartographers on the horizon.</p>
-        <p class="p">This trailer gives us a closer look at some of the new towns, while showing off No Man Sky Frontiers' improved visual effects. In addition, there will also be more in-game No Man's Sky rewards that will be available by watching others stream the game on Twitch.</p>
-    </div>
-    <div class="youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fH474W_6v-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </main>
-    <footer>
-        <div id="footer1">
-            <div>
-                <p><a href="#"><b>No Man's Sky</b></a></p>
-                <p><a href="#"><b>Sign up to receive our newsletter</b></a></p>
-            </div>
-            <div class="enlaces_footer">
-                <ul id="links_footer">
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+        <div class="container-fluid">
+            <div class="container text-center">
+                <h1 class="">New patch, No Man's Sky Frontiers!</h1>
+                <p class="">No Man's Sky Frontiers is the game's latest free update. The update encourages players to explore planetary settlements, help them grow, and even found their own settlement by becoming an overseer. There are hundreds of new base parts to collect, including decorative parts, as well as a new expedition season called Cartographers on the horizon.</p>
+                <p class="">This trailer gives us a closer look at some of the new towns, while showing off No Man Sky Frontiers' improved visual effects. In addition, there will also be more in-game No Man's Sky rewards that will be available by watching others stream the game on Twitch.</p>
             </div>
         </div>
-        <div id="footer2">
-            <div>
-                <p>© 2022 Julio Hudson, all rights reserved.</p>
+        <div class="container mb-5">
+            <div class="ratio ratio-21x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fH474W_6v-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div id="links_redes">
-                <ul id="links_footer2">
-                    <li><a href="https://www.facebook.com"><img src="../img/facebook-new.png" alt="Facebook" width="30px" height="30px"</li>
-                    <li><a href="https://twitter.com"><img src="../img/twitter--v1.png" alt="Twitter" width="30px" height="30px"></a></li>
-                    <li><a href="https://www.instagram.com"><img src="../img/instagram-new--v1.png" alt="Instagram" width="30px" height="30px"></li>
-                    <li><a href="https://www.youtube.com"><img src="../img/youtube-play.png" alt="Youtube" width="30px" height="30px"></a></li>
-                </ul>
-            </div>
-            <div>
-                <p><a href="#">Privacy Policy</a> | <a href="#">End User License Agreement</a></p>
+        </div>
+    </main>
+    <footer class="mt-auto">
+        <div class="container-fluid bg-secondary pt-2 ps-3 pe-3">
+            <div class="row">
+                <div class="col-2">
+                    <a class="ns text-light" href="#">Sign up to receive our newsletter</a>
+                </div>
+                <div class="col-8">
+                    <div>
+                        <ul class="list-unstyled list-inline text-center">
+                            <li class="list-inline-item"><a href="https://www.facebook.com"><img src=".././img/facebook-new.png" alt="Facebook" width="30px" height="30px"></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com"><img src=".././img/twitter--v1.png" alt="Twitter" width="30px" height="30px"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com"><img src=".././img/instagram-new--v1.png" alt="Instagram" width="30px" height="30px"></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com"><img src=".././img/youtube-play.png" alt="Youtube" width="30px" height="30px"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 text-end">
+                    <a class="ns text-light" href="contact.html">Contact us</a>
+                </div>
+            </div>  
+        </div>
+        <div class="container-fluid bg-secondary pb-1">
+            <div class="col-sm">
+                <div class="text-center">
+                    <span>© 2022 Julio Hudson, all rights reserved.</span>
+                </div>
             </div>
         </div>
     </footer>
