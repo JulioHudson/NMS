@@ -10,86 +10,109 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Home</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <div class=".container-fluid bg_color nav_style">
-            <div class="row">
-                <div class="col-sm">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-                        <div class="container-fluid">
-                            <div>
-                                <img src="./img/shipLogo.png" alt="logo" width="100" class="animate__animated animate__bounceInRight">
-                            </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarColor03">
-                                <ul class="navbar-nav me-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="index.html">Home
-                                        <span class="visually-hidden">(current)</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./pages/news.html">News</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./pages/about.html">About</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Media</a>
-                                        <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="./pages/ships.html">Ships I've found</a>
-                                        <a class="dropdown-item" href="./pages/gallery.html">Gallery</a>
-                                        <a class="dropdown-item" href="./pages/video.html">Videos</a>
-                                    </li>
-                                </ul>
-                            <div>
-                                <img src="./img/no_mans_sky_atlas_icon.png" alt="logo2" width="24">
-                                <a class="ns" href="./pages/register.html">Register</a> | <a class="ns" href="./pages/login.html">Login</a>
-                            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container-fluid">
+                <div>
+                    <img src="./img/shipLogo.png" alt="logo" width="100" class="animate__animated animate__bounceInRight">
+                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/ships.html">Ships I've found</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/video.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/about.html">About</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+            <div>
+                <img src="./img/no_mans_sky_atlas_icon.png" alt="logo2" width="24">
+                <a class="ns text-light" href="./pages/register.html">Register</a> | <a  class="ns text-light" href="./pages/login.html">Login</a>
+            </div>
+        </nav>
     </header>  
     <main>
-        <br>
-        <div>
-            <h1 class="h1">Welcome to No Man's Sky!</h1>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="col-12 text-center">
+                    <h1 class="display-2 text-light"><b>Welcome to No Man's Sky!</b></h1>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="text-center">
+                <p class="ns">Explore uncharted solar systems and catalogue unique new forms of life. Every planet’s landscape is different from the next, and populated by species never before encountered.
+                Find ancient artefacts that could reveal the secrets behind the universe.
+                Choose whether to share your discoveries with other players. They’re exploring the same vast universe in parallel; perhaps you’ll make your mark on their worlds as well as your own.</p>
+            </div>
         </div>
-    
-        <div>
-            <p class="p">Explore uncharted solar systems and catalogue unique new forms of life. Every planet’s landscape is different from the next, and populated by species never before encountered.
-            Find ancient artefacts that could reveal the secrets behind the universe.
-            Choose whether to share your discoveries with other players. They’re exploring the same vast universe in parallel; perhaps you’ll make your mark on their worlds as well as your own.</p>
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <img src="./img/explore.jpg" alt="space" class="img-fluid">
+                <h2><b>INFINITE</b></h2> 
+                <p>Entire galaxies lie waiting to be discovered.</p> 
+            </div>  
+            <div class="col-sm-3 text-center">
+                <img src="./img/discover.jpg" alt="discovery" class="img-fluid">
+                <h2><b>STORY</b></h2>
+                <p>Experience infinite freedom, or uncover the secrets of the universe with more than 30 hours of story.</p> 
+            </div>
+            <div class="col-sm-3 text-center">
+                <img src="./img/mp.jpg" alt="dodgefight" class="img-fluid">
+                <h2><b>MULTIPLAYER</b></h2>
+                <p>Dogfight, race exocraft, build colonies, explore, trade, fight and survive together.</p>  
+            </div>
+            <div class="col-sm-3 text-center">
+                <img src="./img/story.jpg" alt="space" class="img-fluid">
+                <h2><b>BEYOND</b></h2>
+                <p>Our 2.0 update adds even more depth and features and brings all the strands of No Man’s Sky into a cohesive whole.</p>
+            </div>    
         </div>
     </main>
-    <footer>
-        <div class=".container-fluid bg-secondary footer">
+    <footer class="mt-auto">
+        <div class="container-fluid bg-secondary pt-2 ps-3 pe-3">
             <div class="row">
-                <div class="col-sm-2">
-                    <div>
-                        <p><a class="ns" href="#">Sign up to receive our newsletter</a></p>
-                    </div>
+                <div class="col-2">
+                    <a class="ns text-light" href="#">Sign up to receive our newsletter</a>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-8">
                     <div>
-                        <ul class="list-unstyled list-inline text-center txt">
+                        <ul class="list-unstyled list-inline text-center">
                             <li class="list-inline-item"><a href="https://www.facebook.com"><img src="./img/facebook-new.png" alt="Facebook" width="30px" height="30px"></a></li>
                             <li class="list-inline-item"><a href="https://twitter.com"><img src="./img/twitter--v1.png" alt="Twitter" width="30px" height="30px"></a></li>
                             <li class="list-inline-item"><a href="https://www.instagram.com"><img src="./img/instagram-new--v1.png" alt="Instagram" width="30px" height="30px"></a></li>
                             <li class="list-inline-item"><a href="https://www.youtube.com"><img src="./img/youtube-play.png" alt="Youtube" width="30px" height="30px"></a></li>
                         </ul>
-                        <div class="text-center">
-                            <p><b>© 2022 Julio Hudson, all rights reserved.</b></p>
-                        </div>
                     </div>
                 </div>
-                <div class="col-sm-2 text-end">
-                    <div>
-                        <p><a class="ns" href="./pages/contact.html">Contact us</a></p>
-                    </div>
+                <div class="col-2 text-end">
+                    <a class="ns text-light" href="./pages/contact.html">Contact us</a>
                 </div>
             </div>  
+        </div>
+        <div class="container-fluid bg-secondary pb-1">
+            <div class="col-sm">
+                <div class="text-center">
+                    <span>© 2022 Julio Hudson, all rights reserved.</span>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
