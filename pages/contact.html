@@ -12,17 +12,16 @@
 <body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-            <div class="container-fluid">
-                <div>
-                    <img src=".././img/shipLogo.png" alt="logo" width="100" class="animate__animated animate__bounceInRight">
-                </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="text-center">
+                    <img src=".././img/shipLogo.png" alt="logo" width="100" class="animate__animated animate__bounceInRight">
+                </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href=".././index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.html">News</a>
@@ -49,44 +48,44 @@
     </header>  
 <main>
     <form class="container">
-    <fieldset>
-        <legend>Ask Us / Sugestions</legend>
-        <div class="form-group">
-        <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-        <label for="nameLastName" class="form-label mt-4">Name</label>
-        <input type="name" class="form-control" id="nameLastName" placeholder="Name and last name">
-        </div>
-        <fieldset class="form-group">
-            <legend class="mt-4">Select an option</legend>
-            <div class="form-check">
-                <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                Ask Us
-                </label>
+        <fieldset>
+            <legend>Ask Us / Sugestions</legend>
+            <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                Sugestions
-                </label>
+            <div class="form-group">
+            <label for="nameLastName" class="form-label mt-4">Name</label>
+            <input type="name" class="form-control" id="nameLastName" placeholder="Name and last name">
             </div>
-            <div class="form-check disabled">
-                <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
-                Others
-                </label>
+            <fieldset class="form-group">
+                <legend class="mt-4">Select an option</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                    Ask Us
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Sugestions
+                    </label>
+                </div>
+                <div class="form-check disabled">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                    Others
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form-group">
+            <label for="exampleTextarea" class="form-label mt-4">Tell Us</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
             </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </fieldset>
-        <div class="form-group">
-        <label for="exampleTextarea" class="form-label mt-4">Tell Us</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </fieldset>
     </form>
 </main>
 <footer class="mt-auto">
