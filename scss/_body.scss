@@ -1,0 +1,13 @@
+$bgi: url(.././img/background0.jpg);
+$bgr: no-repeat;
+$bga: fixed;
+$bgs: cover;
+
+body {
+    background: {
+        image: $bgi;
+        repeat: $bgr;
+        attachment: $bga;
+        size: $bgs;
+    }
+}

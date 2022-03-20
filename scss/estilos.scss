@@ -1,35 +1,31 @@
-.ns {
-    text-decoration: none;
-}
+$headings: (
+    h1: 4em,
+    h2: 3em,
+    h3: 2em,
+    p: 1em,
+);
 
-p {
-    text-shadow: 0px 0 black, 0 1px black, 1px 0 black, 0 0px black;
+@import "header";
+@import "body";
+@import "footer";
+
+@mixin textStyle {
+    text-shadow: (0px 0 black, 0 1px black, 1px 0 black, 0 0px black);
+    text-decoration: none;
+    color: white;
 }
 
 h1 {
-    text-shadow: 0px 0 black, 0 1px black, 1px 0 black, 0 0px black;
+    $h1: map-get($headings, h1);
+    @include textStyle()
 }
 
 h2 {
-    text-shadow: 0px 0 black, 0 1px black, 1px 0 black, 0 0px black;
+    $h2: map-get($headings, h2);
+    @include textStyle()
 }
 
-body {
-    color: white !important;
-    background-image: url(.././img/background0.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+p {
+    $p: map-get($headings, p);
+    @include textStyle()
 }
-
-$base-color: #c6538c;
-$border-dark: rgba($base-color, 0.88);
-
-$parrafo: text-shadow(0px 0 black, 0 1px black, 1px 0 black, 0 0px black);
-
-$titulo1: text-shadow(0px 0 black, 0 1px black, 1px 0 black, 0 0px black);
-
-$titulo2: text-shadow(0px 0 black, 0 1px black, 1px 0 black, 0 0px black);
-
-$ns: text-decoration(none);
-
